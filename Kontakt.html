@@ -2,33 +2,150 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Aufgabe 2</title>
+    <title>Aufgabe 3</title>
 </head>
-<body style="background-color:grey;">
-    <header>
-        <h1 align="center">Kontakt</h1>
-     </header>
-     <nav align="center">
-        <ul>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Übermich.html">Über mich</a>
-            <a href="Kontakt.html">Kontakt</a>
-        </ul>
-    </nav>
-     <div align="center">
-     <li>
-        E-Mail: karen.josten@hs-furtwangen.de
-     </li>
-     <li>
-        Instagram: <a href="https://www.instagram.com/karenjstt/?hl=de">karenjstt</a> 
-     </li></div>
+<body>
+    <div style="background-image: url('Bilder/bg.png')">
+        <header> 
+        <div class="circle">
+            <img src="Bilder/kreis3.png" class="circle" >
+            <nav>
+                <ul>
+                    <a href="Aufgabe_3.html">PORTFOLIO</a>
+                    <a href="Übermich.html">ÜBER MICH</a>
+                    <a href="Kontakt.html">KONTAKT</a>
+                </ul>
+        <h2>Bei Fragen bitte vollständig ausfüllen.</h2>
+
+     <form>      
+        <input name="name" type="text" class="feedback-input" placeholder="Name" /> 
+        <input name="vorname" type="text" class="feedback-input" placeholder="Vorname" />   
+        <input name="email" type="text" class="feedback-input" placeholder="E-Mail" />
+        <textarea name="text" class="feedback-input" placeholder="Nachricht"></textarea>
+       
+        <p>Mit Absenden der Nachricht bestätige ich den Datenschutz</p>
+       
+        <input type="submit" value="absenden"/>
+      </form>
+
+      <div class="instagram">
+        <a href="https://www.instagram.com/karenjstt/?hl=de" target="_blank">
+            <img src="Bilder/instagram.svg" class="instagram"></a>
+        </div>
 
 </body>
 </html>
 
 <style>
+
+body {
+    background-image: url("bg.png");
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url('Bilder/bg.png');
+    background-repeat: repeat;
+}
+
+    
+    .circle {
+    position: static;
+    display: block;
+    margin: -35px auto;
+    width: 700px;
+}
+
     ul {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: white;
+    font-family: sans-serif;
+    position: fixed;
+    right: 20%;
+    top: 0;
+    margin: 0px 2px 2px 2px;
+    padding: 0px;
+    overflow:auto;
+    background: black;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     }
+
+   ul a {
+        color:ivory;
+        text-decoration: none;
+    }
+
+    ul  a:hover{
+        color:grey;
+    }
+
+    h2 {
+        color: #8A0808;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+
+    p {
+        color: grey;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+div {
+        background-image: url('Bilder/bg.png');
+        
+    }
+
+form { 
+    max-width:420px; 
+    margin:50px auto; 
+    margin-bottom: 40px; }
+
+.feedback-input {
+  color: black;
+  font-family: sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #8A0808;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #8A0808; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: sans-serif;
+  width: 100%;
+  background: #8A0808;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background: grey; }
+
+.instagram {
+        width: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
 </style>

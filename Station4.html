@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Station 4</title>
+<style>
+body {
+	font-family: arial;
+	font-size: small;
+	background: #fff0ff;
+}
+</style>
+</head>
+<body class="background">
+    <div class="flex-container">
+        <img class="wrapper" src="images/wrapperbg4.png">
+    </div>
+    <form class="bb">
+    <h1>Formular</h1>
+    <p class="yourname">Dein Name:</p>
+        <input class="name" placeholder="Name"><br>
+    <p class="greetings">Deine Urlaubsgrüße:</p>
+        <textarea class="message" placeholder="Deine Urlaubsgrüße"></textarea>
+    <p class="chooseone">Choose</p>
+        <input type="radio" id="one" name="button" value="one" placeholder="eins">
+        <label for="one">eins</label> 
+        <input type="radio" id="two" name="button" value="two"><br>
+        <label for="two" class="label1">zwei</label>
+        <input class="choose">
+        </form>
+        </body>
+</html>
+
+<style>
+
+.background {
+    background-image: url("images/bg4.png");
+    background-repeat: repeat;
+    width: 100%;
+}
+
+.flex-container {
+    margin-left: 400px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    position: absolute;
+    justify-content: center;
+    
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    top: 120px;
+    left: 600px;
+    display: inline-block;
+}
+
+.yourname {
+    position: relative;
+    left: 315px;
+    top: 190px;
+}
+
+.name {
+    position: relative;
+    left: 220px;
+    top: 220px;
+}
+
+.greetings {
+
+    position: relative;
+    padding: 2px;
+    left: 445px;
+    top: 200px;
+
+}
+
+.message {
+    position: relative;
+    left: 283px;
+    top: 250px;
+}
+p {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    top: 260px;
+    left: 200px;
+    display: inline-block;
+}
+
+#one {
+    position: relative;
+    left:80px;
+    top:310px;
+}
+
+#two {
+    position: relative;
+    left:85px;
+    top:310px;
+}
+
+label {
+    left: 80px;
+    position: relative;
+    top:310px;
+    color: white;
+}
+
+.label1 {
+    left: 525px;
+    position: relative;
+    top:272px;
+    color: white;
+}
+
+.chooseone {
+    position: relative;
+    left:140px;
+    top: 280px;
+}
+
+.choose {
+    position: relative;
+    padding: 2px;
+    left: 420px;
+    top: 310px;
+}
+
+</style>

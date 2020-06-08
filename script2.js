@@ -36,9 +36,19 @@ var nordaVerkg = norda18 - norda08;
 var southaVerkg = southa18 - southa08;
 var asiaVerkg = asia18 - asia08;
 var ausVerkg = aus18 - aus08;
+
+window.addEventListener("load", function () {
+    document.querySelector(".europe").addEventListener("click", europa);
+    document.querySelector(".africa").addEventListener("click", afrika);
+    document.querySelector(".northamerica").addEventListener("click", nordamerika);
+    document.querySelector(".southamerica").addEventListener("click", südamerika);
+    document.querySelector(".asia").addEventListener("click", asien);
+    document.querySelector(".australia").addEventListener("click", australien);
+});
+
 function europa() {
     document.querySelector("#titleRegion").innerHTML = "Europa";
-    document.querySelector(".chart")?.setAttribute("style", "height:" + europaRe + "px");
+    document.querySelector(".chart").setAttribute("style", "height:" + europaRe + "px");
     //Emission Europa
     document.querySelector("#emis").innerHTML = europa18.toFixed(2) + " kg CO2";
     document.querySelector("#emisText").innerHTML = "CO2-Emissionen von Europa im Jahr 2018";
@@ -52,12 +62,10 @@ function europa() {
     document.querySelector("#abs").innerHTML = europaVerkg.toFixed(2) + " kg CO2";
     document.querySelector("#absText").innerHTML = "Die Veränderung der Emission in Europa von 2018 im Vergleich zu 2008";
 }
-window.addEventListener("load", function () {
-    document.querySelector(".europe")?.addEventListener("click", europa);
-});
+
 function afrika() {
     document.querySelector("#titleRegion").innerHTML = "Afrika";
-    document.querySelector(".chart")?.setAttribute("style", "height:" + afrikaRe + "px");
+    document.querySelector(".chart").setAttribute("style", "height:" + afrikaRe + "px");
     //Emission Afrika
     document.querySelector("#emis").innerHTML = afrika18.toFixed(2) + " kg CO2";
     document.querySelector("#emisText").innerHTML = "CO2-Emissionen von Afrika im Jahr 2018";
@@ -71,12 +79,10 @@ function afrika() {
     document.querySelector("#abs").innerHTML = afrikaVerkg.toFixed(2) + " kg CO2";
     document.querySelector("#absText").innerHTML = "Die Veränderung der Emission in Afrika von 2018 im Vergleich zu 2008";
 }
-window.addEventListener("load", function () {
-    document.querySelector(".africa")?.addEventListener("click", afrika);
-});
+
 function nordamerika() {
     document.querySelector("#titleRegion").innerHTML = "Nordamerika";
-    document.querySelector(".chart")?.setAttribute("style", "height:" + nordaRe + "px");
+    document.querySelector(".chart").setAttribute("style", "height:" + nordaRe + "px");
     //Emission Nordamerika
     document.querySelector("#emis").innerHTML = norda18.toFixed(2) + " kg CO2";
     document.querySelector("#emisText").innerHTML = "CO2-Emissionen von Nordamerika im Jahr 2018";
@@ -90,12 +96,10 @@ function nordamerika() {
     document.querySelector("#abs").innerHTML = nordaVerkg.toFixed(2) + " kg CO2";
     document.querySelector("#absText").innerHTML = "Die Veränderung der Emission in Nordamerika von 2018 im Vergleich zu 2008";
 }
-window.addEventListener("load", function () {
-    document.querySelector(".northamerica")?.addEventListener("click", nordamerika);
-});
+
 function südamerika() {
     document.querySelector("#titleRegion").innerHTML = "Südamerika";
-    document.querySelector(".chart")?.setAttribute("style", "height:" + southaRe + "px");
+    document.querySelector(".chart").setAttribute("style", "height:" + southaRe + "px");
     //Emission Südamerika
     document.querySelector("#emis").innerHTML = southa18.toFixed(2) + " kg CO2";
     document.querySelector("#emisText").innerHTML = "CO2-Emissionen von Südamerika im Jahr 2018";
@@ -109,12 +113,10 @@ function südamerika() {
     document.querySelector("#abs").innerHTML = southaVerkg.toFixed(2) + " kg CO2";
     document.querySelector("#absText").innerHTML = "Die Veränderung der Emission in Südamerika von 2018 im Vergleich zu 2008";
 }
-window.addEventListener("load", function () {
-    document.querySelector(".southamerica")?.addEventListener("click", südamerika);
-});
+
 function asien() {
     document.querySelector("#titleRegion").innerHTML = "Asien";
-    document.querySelector(".chart")?.setAttribute("style", "height:" + asiaRe + "px");
+    document.querySelector(".chart").setAttribute("style", "height:" + asiaRe + "px");
     //Emission Asien
     document.querySelector("#emis").innerHTML = asia18.toFixed(2) + " kg CO2";
     document.querySelector("#emisText").innerHTML = "CO2-Emissionen von Asien im Jahr 2018";
@@ -128,12 +130,10 @@ function asien() {
     document.querySelector("#abs").innerHTML = asiaVerkg.toFixed(2) + " kg CO2";
     document.querySelector("#absText").innerHTML = "Die Veränderung der Emission in Asien von 2018 im Vergleich zu 2008";
 }
-window.addEventListener("load", function () {
-    document.querySelector(".asia")?.addEventListener("click", asien);
-});
+
 function australien() {
     document.querySelector("#titleRegion").innerHTML = "Australien";
-    document.querySelector(".chart")?.setAttribute("style", "height:" + ausRe + "px");
+    document.querySelector(".chart").setAttribute("style", "height:" + ausRe + "px");
     //Emission Australien
     document.querySelector("#emis").innerHTML = aus18.toFixed(2) + " kg CO2";
     document.querySelector("#emisText").innerHTML = "CO2-Emissionen von Australien im Jahr 2018";
@@ -147,7 +147,5 @@ function australien() {
     document.querySelector("#abs").innerHTML = ausVerkg.toFixed(2) + " kg CO2";
     document.querySelector("#absText").innerHTML = "Die Veränderung der Emission in Australien von 2018 im Vergleich zu 2008";
 }
-window.addEventListener("load", function () {
-    document.querySelector(".australia")?.addEventListener("click", australien);
-});
+
 //# sourceMappingURL=script.js.map

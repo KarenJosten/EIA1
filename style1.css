@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+.buttons {
+    padding: 150px 150px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 8px 8px 8px 8px;
+    text-align: center;
+}
+
+.button1, .button2, .button3 {
+    padding: 100px 100px;
+    margin: 5px;
+    border: 3px solid #4746a5;
+    border-radius: 10px;
+    background-color: #706ee4;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: lighten(rgb(114, 128, 150), 10%);
+}
+
+.button4, .button5, .button6 {
+    padding: 100px 100px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px solid #a13838;
+    background-color: #d35151;
+    cursor: pointer;
+}
+
+.button7, .button8, .button9 {
+    padding: 100px 100px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 3px solid #8f852d;
+    background-color: #cec045;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -75,22 +75,4 @@ function playSample(sounds) {
         loop.push(sounds);
     }
 }
-/*keydown
-window.addEventListener("load", function() {
-    document.querySelector("#A").addEventListener("keydown", function() {playSample(0); });
-    });
-
-var pad1: HTMLAudioElement = new Audio(btn[0]);
-// tslint:disable-next-line: typedef
-window.document.getElementById(function())
-var code = e.keydown;
-var kc = document.charset, string: (e.keydown);
-
-
-switch (kc) {
-        case "R":
-            pad1.load();
-            pad1.play();
-            break;
-    }*/
 //# sourceMappingURL=script.js.map

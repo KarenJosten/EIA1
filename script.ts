@@ -15,7 +15,6 @@ window.addEventListener("load", function () {
     var dlte = document.getElementsByClassName("fas fa-trash-alt");
 
     //ein To Do löschen
-    //wird ein neues To-Do hinzugefügt, funktioniert delete nicht mehr
     for (var x = 0; 
     x < dlte.length; 
     x++) {
@@ -48,6 +47,7 @@ window.addEventListener("load", function () {
         //Anzahl der To-Dos
         var anzahl = document.querySelector("#anzahl");
         anzahl.innerHTML = liste.length;
+
 
     }
 });

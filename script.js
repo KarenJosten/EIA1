@@ -14,7 +14,6 @@ window.addEventListener("load", function () {
     //delete
     var dlte = document.getElementsByClassName("fas fa-trash-alt");
     //ein To Do löschen
-    //wird ein neues To-Do hinzugefügt, funktioniert delete nicht mehr
     for (var x = 0; x < dlte.length; x++) {
         dlte[x].onclick = function () {
             // tslint:disable-next-line: typedef

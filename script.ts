@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
             var div = this.parentElement;
             div.style.display = "none";
             //zählt runter -1
-            anzahl.innerHTML = i--;
+            anzahl.innerHTML--;
         };
     }
 });

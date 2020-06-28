@@ -11,16 +11,6 @@ window.addEventListener("load", function () {
     todos();
     //button
     var btn = document.querySelector("#btn");
-    //delete
-    var dlte = document.getElementsByClassName("fas fa-trash-alt");
-    //ein To Do löschen
-    for (var x = 0; x < dlte.length; x++) {
-        dlte[x].onclick = function () {
-            // tslint:disable-next-line: typedef
-            var div = this.parentElement;
-            div.style.display = "none";
-        };
-    }
     // tslint:disable-next-line: typedef
     btn.addEventListener("click", function () {
         liste.push(list.value);
@@ -40,6 +30,18 @@ window.addEventListener("load", function () {
         //Anzahl der To-Dos
         var anzahl = document.querySelector("#anzahl");
         anzahl.innerHTML = liste.length;
+    }
+    //delete
+    var dlte = document.getElementsByClassName("fas fa-trash-alt");
+    //ein To Do löschen
+    for (var i = 0; i < dlte.length; i++) {
+        dlte[i].onclick = function () {
+            // tslint:disable-next-line: typedef
+            var div = this.parentElement;
+            div.style.display = "none";
+            //zählt runter -1
+            anzahl.innerHTML = i--;
+        };
     }
 });
 //# sourceMappingURL=script.js.map

@@ -1,0 +1,63 @@
+body{
+    background-image:url(Bilder/blume.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     color: black;
+   }
+
+   .container {
+    padding:10px;
+    width:300px;
+    border-radius: 10%;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+   }
+
+.add {
+   position: relative;
+   height:50px;
+   padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+li {
+    position: relative;
+}
+
+#anzahl {
+    color: white;
+    font-size: 50px;
+}
+
+#btn {
+  margin-bottom: 2%;
+  color: grey;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px black;
+  }
+
+  #checkbox {
+    font-size: 15px;
+}
+  
+#btn:hover {
+    background-color: white;
+  }
+
+  .fa-trash-alt {
+      color: black;
+      font-size: 15px;
+  }
+
+  .fa-trash-alt:hover {
+      color: red;
+  }
+

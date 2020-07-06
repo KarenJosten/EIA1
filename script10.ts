@@ -16,6 +16,16 @@
 /*var todosText: string[] =       ["Lorem" , "Ipsum" , "Dolor"];
 var todosChecked: boolean[] =    [true    , false   , false];*/
 
+//!VERBESSERUNG: habe ein interface in der .ts Datei erstellt
+ /*//hatte ich schon definiert, wird halt in der JS datei nicht angezeigt
+interface todoListe { 
+    todosText: string; 
+    todosChecked: boolean;
+}
+//Aus den 2 Arrays ein Array machen, 
+var alltodos: todoListe[] = [ .....
+*/
+
 //hatte ich schon definiert, wird halt in der JS datei nicht angezeigt
 interface todoListe { 
     todosText: string; 

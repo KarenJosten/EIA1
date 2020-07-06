@@ -16,12 +16,13 @@
 /*var todosText: string[] =       ["Lorem" , "Ipsum" , "Dolor"];
 var todosChecked: boolean[] =    [true    , false   , false];*/
 
-//Aus den 2 Arrays ein Array machen
+//hatte ich schon definiert, wird halt in der JS datei nicht angezeigt
 interface todoListe { 
     todosText: string; 
     todosChecked: boolean;
 }
 
+//Aus den 2 Arrays ein Array machen, 
 var alltodos: todoListe[] = [
     {
     todosText: "EIA1 machen", 

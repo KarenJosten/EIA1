@@ -13,7 +13,15 @@
  * todosChecked gehören zusammen zu einem ToDo.
  */
 
- //!VERBESSERUNG: habe ein interface in der .ts Datei erstellt, wird halt nicht in der .js Datei angezeigt 
+ //!VERBESSERUNG: habe ein interface in der .ts Datei erstellt
+ /*//hatte ich schon definiert, wird halt in der JS datei nicht angezeigt
+interface todoListe { 
+    todosText: string; 
+    todosChecked: boolean;
+}
+//Aus den 2 Arrays ein Array machen, 
+var alltodos: todoListe[] = [ .....
+*/
 //Aus den 2 Arrays ein Array machen
 var alltodos = [
     {

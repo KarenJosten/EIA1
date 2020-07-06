@@ -12,6 +12,9 @@
  * Werte, bspw. Stelle 0 im Array todosText und Stelle 0 im Array
  * todosChecked gehören zusammen zu einem ToDo.
  */
+
+ //!VERBESSERUNG: habe ein interface in der .ts Datei erstellt, wird halt nicht in der .js Datei angezeigt 
+//Aus den 2 Arrays ein Array machen
 var alltodos = [
     {
         todosText: "EIA1 machen",
